@@ -1,13 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { KandyKorner } from './components/KandyKorner';
 import './index.css';
-
+import { BrowserRouter } from "react-router-dom"
 import reportWebVitals from './reportWebVitals';
+import { KandyKorner } from './components/KandyKorner';
+
+
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <KandyKorner />
+    <BrowserRouter>
+      <KandyKorner />
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );

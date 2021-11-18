@@ -1,14 +1,14 @@
+import { ApplicationViews } from "./ApplicationViews"
 import { Locations } from "./locations/Locations"
+import { NavBar } from "./Nav/NavBar"
 import { Products } from "./products/ProductList"
 
 export const KandyKorner = () => {
     return (
         <>
-        <h1>Kandy Korner</h1>
-        <h2>Locations</h2>
-            <Locations />
-        <h2>Products</h2>
-            <Products />
+            <NavBar />
+            <h1>Kandy Korner Konfections</h1>
+            <ApplicationViews />
         </>
     )
 
