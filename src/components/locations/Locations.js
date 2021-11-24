@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+import { Link } from "react-router-dom"
 
 
 export const Locations = () => {
@@ -21,7 +22,8 @@ export const Locations = () => {
         {
             locations.map(
                 (locationObj) => {
-                    return <p key={`location--${locationObj.id}`}>{locationObj.name} : {locationObj.address}</p>
+                    return <p key={`location--${locationObj.id}`}>
+                        <Link to={`/locations/${locationObj.id}`}>{locationObj.name}</Link> : {locationObj.address}</p>
                 }
             )
         }

@@ -1,10 +1,12 @@
 import { ApplicationViews } from "./ApplicationViews"
 import { NavBar } from "./Nav/NavBar"
-import { Route, Redirect } from "react-router";
+import { Route, Redirect } from "react-router-dom";
 import { Login } from "./auth/Login";
 import { Register } from "./auth/Register";
 
 export const KandyKorner = () => {
+    return (
+        
     <>
       <Route
         render={() => {
@@ -29,5 +31,5 @@ export const KandyKorner = () => {
         <Register />
       </Route>
     </>
-    
+        )
 }
