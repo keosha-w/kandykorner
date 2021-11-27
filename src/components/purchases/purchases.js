@@ -1,13 +1,13 @@
 
-import { useHistory } from "react-router-dom"
+import { useHistory } from "react-router"
 
 
 
     
     
     export const SavePurchase = (event) => {
-        const history = useHistory()
         event.preventDefault()
+        const history = useHistory()
 
         const newOrder = {
             customerId: parseInt(localStorage.getItem("kandy_customer")),
